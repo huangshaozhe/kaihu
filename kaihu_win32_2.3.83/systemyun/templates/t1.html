@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用户管理</title>
+    <!-- ####<link type="text/css" href="/static/base.css" rel="stylesheet" />#### -->
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <th>用户名</th>
+            <th>密码</th>
+        </tr>
+        {% for item in li %}
+        <tr>
+            <td>{{ item.name }}</td>
+            <td>{{ item.password }}</td>
+         </tr>
+        {% endfor %}   
+    </table>
+    <form action="/db_handle" method="post">
+         <p><input name="name" /></p>
+         <p><input name="password" /></p>
+         <p><input type="submit" value="submit" /></p>
+     </form>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+        <meta charset="UTF-8">
+        <title>SYSTEM云</title>
+        <style>
+        .button{
+            width: 200px; /*设置按钮宽度*/
+            height: 30px; /*设置按钮高度*/
+            color:white; /*字体颜色*/
+            background-color:cornflowerblue; /*按钮背景颜色*/
+            border-radius: 3px; /*让按钮变得圆滑一点*/
+            border-width: 0; /*消去按钮丑的边框*/
+            margin: 0;
+            outline: none; /*取消轮廓*/
+            font-family: KaiTi; /*字体设置为楷体*/
+            font-size: 17px; /*设置字体大小*/
+            text-align: center; /*字体居中*/
+            cursor: pointer; /*设置鼠标箭头手势*/
+        }
+         button:hover{ /*鼠标移动时的颜色变化 */
+            background-color: antiquewhite;
+        } 
+        </style>
+    </head>
+
+<body>
+<h2 style="text-align:center">人工服务</h2>
+<p style="text-align:center">
+<button class="button" onclick="winning();add_jump()">添加账户</button>
+</p>
+<p style="text-align:center">
+<button class="button" onclick="del_jump()">删除账户</button>
+</p>
+<p style="text-align:center">
+<button class="button" onclick="winning();revise()">修改账户密码</button>
+</p>
+<p style="text-align:center">
+<button class="button" onclick="purchase_admin()">购买管理员</button>
+</p>
+<p style="text-align:center">
+<button class="button" onclick="donate()">捐赠</button>
+</p>
+<p style="text-align:center">
+<button class="button" onclick="human_services()">人工服务</button>
+</p>
+<p style="text-align:center">
+<h5 style="text-align:center">
+	<!-- <p>
+	tips:密码要为混合密码加标点符号
+	</p>
+	<p>
+	tips:本计算机因组策略影响只能连接2人,敬请期待。
+	</p> -->
+    <script>
+        function winning() {
+                window.alert('警告:密码要为混合密码加标点符号,本计算机因组策略影响只能连接2人,敬请期待。')
+        }
+    </script>
+    <script>
+        function add_jump() {
+            window.location.href="http://124.221.181.114:3389/add_account/";
+        }
+    </script>
+    <script>
+        function del_jump() {
+            window.location.href="http://124.221.181.114:3389/del_account/"
+        }
+    </script>
+    <script>
+        function revise() {
+            window.location.href="http://124.221.181.114:3389/revise/"
+        }
+    </script>
+    <script>
+        function purchase_admin() {
+            window.location.href="http://124.221.181.114:3389/purchase_admin/"
+        }
+    </script>
+    <script>
+        function donate() {
+            window.location.href="http://124.221.181.114:3389/donate/"
+        }
+    </script>
+    <script>
+        function human_services() {
+            window.location.href="http://124.221.181.114:3389/human_services"
+        }
+    </script>
+</h5>
+</p>
+</body>
+</html>
